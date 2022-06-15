@@ -4,12 +4,19 @@ import classNames from "classnames";
 
 function HomePage() {
 
-    const conditionalStyles = classNames('container', {
-        "bkg-dark": isClicked,
-        "bkg-light": !isClicked
+    const [isClicked, setIsClicked] = useState(false)
+
+    const handleToggle = () => {
+        setIsClicked(!isClicked);
+    }
+
+    const wrapper = classNames('container', {
+        // "bkg-dark": isClicked,
+        // "bkg-light": !isClicked,
     });
+
     return (
-        <div className={conditionalStyles}>
+        <div className={wrapper}>
             <h1>hello</h1>
         </div>
     )

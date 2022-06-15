@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+.container{
+    background-color: rgb(41, 41, 41);
+
+}
+.bkg-dark{
+    background-color: rgb(41, 41, 41);
+}
+.bkg-light{
+    background-color: white;
+}
