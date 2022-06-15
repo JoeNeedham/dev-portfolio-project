@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(54, 53, 53);
+
+}
+.bkg-dark{
+    background-color: rgb(41, 41, 41);
+}
+.bkg-light{
+    background-color: white;
+}
