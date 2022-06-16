@@ -1,5 +1,6 @@
 import { React, useState } from 'react'
 import { HomePage } from '../../components'
+import { CodingProjects } from '../../components'
 import { Navbar } from '../../components'
 import classNames from 'classnames'
 import './home.css'
@@ -20,7 +21,8 @@ function Home() {
     return (
         <div className={wrapper}>
             <Navbar />
-            <HomePage />
+            {/* <HomePage /> */}
+            <CodingProjects />
         </div>
     )
 }

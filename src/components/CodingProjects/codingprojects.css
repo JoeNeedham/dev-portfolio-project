@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+
+.projects-container{
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+.section-title{
+    display: flex;
+    margin-left: 75px;
+}
+
+.section-title h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    letter-spacing: 3px;
+    font-size: 2.8em;
+    color: white;
+    padding: 30px;
+}

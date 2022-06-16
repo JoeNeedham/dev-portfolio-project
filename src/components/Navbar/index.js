@@ -9,8 +9,8 @@ function Navbar() {
                 <div class="nav_links_content">
                     <ul class="nav_link_list">
                         <li><a href="#" class="nav_link active">home</a></li>
+                        <li><a class="nav_link">About Me</a></li>
                         <li><a class="nav_link">Portfolio</a></li>
-                        <li><a class="nav_link">About</a></li>
                         <li><a class="nav_link">Contact</a></li>
                     </ul>
                 </div>
