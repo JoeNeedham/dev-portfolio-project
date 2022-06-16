@@ -6,8 +6,11 @@ function HomePage() {
 
 
     return (
-        <div>
-            <h1>hello</h1>
+        <div className='home-container'>
+            <div className='home-content'>
+                <h1 className='job-title'>FRONTEND DEVELOPER</h1>
+                <h2 className='adjectives'>CREATIVE - DESIGNER - PROBLEM SOLVER </h2>
+            </div>
         </div>
     )
     }

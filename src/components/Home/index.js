@@ -20,7 +20,7 @@ function Home() {
     return (
         <div className={wrapper}>
             <Navbar />
-            {/* <HomePage /> */}
+            <HomePage />
         </div>
     )
 }
