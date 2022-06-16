@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap');
 .nav{
+    padding: 1px;
     width: 100%;
     height: 80px;
     box-shadow: 0 5px 5px -2px rgba(0,0,0,.2);
+    top: 0;
+    left: 0;
+    position: sticky;
+    background-color: inherit;
 }
 .nav_content{
     width: 100%;
