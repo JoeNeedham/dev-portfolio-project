@@ -5,9 +5,7 @@ function Navbar() {
     return (
         <div className="nav">
             <div className="nav_content">
-                <div>
-                    <h2 className='name'>JOE NEEDHAM</h2>
-                </div>
+                <h2 className='name'><span><i class="fa-brands fa-react react-icon"></i></span>JOE NEEDHAM</h2>
                 <div class="nav_links_content">
                     <ul class="nav_link_list">
                         <li><a href="#" class="nav_link active">home</a></li>
