@@ -24,3 +24,10 @@
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 3px;
 }
+
+.attributes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
