@@ -3,7 +3,7 @@ import './homepage.css'
 import classNames from "classnames";
 
 function HomePage() {
-
+//commit
 
     return (
         <div className='home-container'>
@@ -16,7 +16,7 @@ function HomePage() {
                 <h2 style={{color: "yellow"}} className='adjectives'>DESIGNER - </h2>
                 &nbsp;
                 &nbsp;
-                <h2 style={{color: "blue"}} className='adjectives'>PROBLEM SOLVER</h2>
+                <h2 style={{color: "rgb(45, 41, 255)"}} className='adjectives'>PROBLEM SOLVER</h2>
             </div>
                 {/* <h2 className='adjectives'>CREATIVE - DESIGNER - PROBLEM SOLVER </h2> */}
             </div>
