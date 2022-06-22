@@ -14,8 +14,25 @@
     font-weight: normal;
     letter-spacing: 3px;
     font-size: 2.8em;
-    color: white;
     padding: 30px;
     text-decoration: underline black 1.5px;
     text-underline-offset: 15px;
+}
+
+.about-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content{
+    margin-left: 45px;
+    padding: 30px;
+}
+
+.about-content h2{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    letter-spacing: 3px;
+    /* font-size: 2.5em; */
 }
