@@ -1,0 +1,21 @@
+.about-container{
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+.about-title{
+    display: flex;
+    margin-left: 45px;
+}
+
+.about-title h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    letter-spacing: 3px;
+    font-size: 2.8em;
+    color: white;
+    padding: 30px;
+    text-decoration: underline black 1.5px;
+    text-underline-offset: 15px;
+}

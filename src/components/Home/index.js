@@ -1,5 +1,5 @@
 import { React, useState } from 'react'
-import { HomePage } from '../../components'
+import { AboutMe, HomePage } from '../../components'
 import { CodingProjects } from '../../components'
 import { Navbar } from '../../components'
 import classNames from 'classnames'
@@ -23,6 +23,7 @@ function Home() {
             <Navbar />
             <HomePage />
             <CodingProjects />
+            <AboutMe />
         </div>
     )
 }
