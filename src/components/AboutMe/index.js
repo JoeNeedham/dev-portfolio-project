@@ -36,6 +36,7 @@ function AboutMe() {
                                 <img src="images/mongoDB.png" alt="" />
                                 <p>MongoDB</p>
                             </div>
+                            {/* commit */}
                         </div>
                     </div>
                 </div>
