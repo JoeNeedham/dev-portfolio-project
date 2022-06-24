@@ -9,9 +9,15 @@ function CodingProjects() {
                     <h1>RECENT PROJECTS</h1>
                 </div>
                 <div className="projects">
-                    <div className="box"></div>
-                    <div className="box"></div>
-                    <div className="box"></div>
+                    <div className="box">
+                        <video autoPlay muted loop src="media/RIOVIISUALS - 23 June 2022.mp4"></video>
+                    </div>
+                    <div className="box">
+                        <video autoPlay muted loop src="media/Netflix - 23 June 2022.mp4"></video>
+                    </div>
+                    <div className="box">
+                        <video autoPlay muted loop src="media/Anime Watch List - 23 June 2022.mp4"></video>
+                    </div>
                 </div>
             </div>
         </div>

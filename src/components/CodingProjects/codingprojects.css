@@ -34,6 +34,12 @@
 .box{
     height: 300px;
     width: 450px;
+    border: solid 1px black;
     background-color: black;
     margin-right: 15px;
+}
+
+video {
+    height: 100%;
+    width: 100%;
 }
