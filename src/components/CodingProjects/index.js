@@ -10,6 +10,7 @@ function CodingProjects() {
                 </div>
                 <div className="projects">
                     <div className="box">
+                        {/* <span style={{ color: "white" }}>Portfolio Website</span> */}
                         <video autoPlay muted loop src="media/RIOVIISUALS - 23 June 2022.mp4"></video>
                     </div>
                     <div className="box">
