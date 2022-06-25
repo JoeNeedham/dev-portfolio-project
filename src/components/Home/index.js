@@ -27,10 +27,17 @@ function Home() {
         // "bkg-light": !isClicked,
     });
 
+    const onClickHandler = () => {
+        document.getElementById("aboutme").scrollIntoView();
+    }
+
+
     return (
         <div className={wrapper}>
-            <Navbar />
+            <Navbar onclickhandler={onClickHandler} />
             <HomePage />
+            <section id="aboutme">
+            </section>
             <AboutMe />
             <CodingProjects />
             <ContactMe />
