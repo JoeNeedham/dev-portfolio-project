@@ -36,8 +36,6 @@ function Home() {
         <div className={wrapper}>
             <Navbar onclickhandler={onClickHandler} />
             <HomePage />
-            <section id="aboutme">
-            </section>
             <AboutMe />
             <CodingProjects />
             <ContactMe />
