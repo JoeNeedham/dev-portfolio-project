@@ -1,11 +1,23 @@
 import React, { useState } from 'react';
 import './homepage.css'
 import classNames from "classnames";
+import { motion } from 'framer-motion';
 
 function HomePage() {
 
+    const squareVariants = {
+        visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+        hidden: { opacity: 0, scale: 0 }
+    };
+
     return (
-        <div className='home-container'>
+        <motion.div
+        variants={squareVariants}
+        initial='hidden'
+        animate='visible'
+        transition={{ delay: 1 }}
+        className='home-container'
+        >
             <div className='home-content'>
                 <h1 className='job-title'>FRONTEND ENGINEER</h1>
             <div className="attributes">
@@ -19,7 +31,7 @@ function HomePage() {
             </div>
                 {/* <h2 className='adjectives'>CREATIVE - DESIGNER - PROBLEM SOLVER </h2> */}
             </div>
-        </div>
+        </motion.div>
     )
     }
 

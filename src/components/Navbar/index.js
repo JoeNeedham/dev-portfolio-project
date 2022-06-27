@@ -63,10 +63,10 @@ function Navbar() {
                 <h2 className='name'><span><i className="fa-brands fa-react react-icon rotating"></i></span>JOE NEEDHAM</h2>
                 <div className="nav_links_content">
                     <ul className="nav_link_list">
-                        <li><a onClick={homeNav} className={navLink1} >Home</a></li>
-                        <li><a onClick={aboutMeNav} className={navLink1} >About Me</a></li>
-                        <li><a onClick={portfolioNav} className={navLink1} >Portfolio</a></li>
-                        <li><a onClick={contactNav} className={navLink1}>Contact</a></li>
+                        <li><a onClick={homeNav} className='nav_link' >Home</a></li>
+                        <li><a onClick={aboutMeNav} className='nav_link' >About Me</a></li>
+                        <li><a onClick={portfolioNav} className='nav_link' >Portfolio</a></li>
+                        <li><a onClick={contactNav} className='nav_link'>Contact</a></li>
                     </ul>
                 </div>
             </div>
