@@ -6,10 +6,11 @@ import { motion } from 'framer-motion';
 function HomePage() {
 
     const squareVariants = {
-        visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
-        hidden: { opacity: 0, scale: 0 }
+        visible: { x: -20, opacity: 1, scale: 1, transition: { duration: 1 } },
+        hidden: { x: -1500, opacity: 0, scale: 0 }
     };
 
+    
     return (
         <motion.div
         variants={squareVariants}

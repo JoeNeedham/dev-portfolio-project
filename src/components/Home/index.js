@@ -18,6 +18,14 @@ function Home() {
         // "bkg-light": !isClicked,
     });
 
+    window.onbeforeunload = function () {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            // behavior: 'smooth'
+        });
+    };
+
     return (
         <div className={wrapper}>
             <Navbar />
