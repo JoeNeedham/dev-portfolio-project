@@ -1,11 +1,42 @@
-import React from 'react'
+import { React, useEffect} from 'react'
 import './aboutme.css'
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function AboutMe() {
+
+    const squareVariants = {
+        visible: { x: 0, opacity: 1, scale: 1, transition: { duration: 1 } },
+        hidden: { x: 0, opacity: 0, scale: 0 }
+    };
+    
+    const controls = useAnimation();
+
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+        controls.start("visible");
+        }
+    }, [controls, inView]);
+
     return (
-        <div className='about-container'>
+        <motion.div
+        ref={ref}
+        variants={squareVariants}
+        initial='hidden'
+        animate={controls}
+        transition={{ delay: 1 }}
+        className='about-container'>
             <div className="about-section">
-                <div className="about-title">
+                <div
+                ref={ref}
+                className="about-title"
+                variants={squareVariants}
+                initial='hidden'
+                animate={controls}
+                transition={{ delay: 1 }}
+                >
                     <h1>HEY, I'M JOE!</h1>
                 </div>
                 <div className="about-content">
@@ -40,7 +71,7 @@ function AboutMe() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
     }
 

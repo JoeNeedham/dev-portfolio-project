@@ -1,9 +1,34 @@
-import React from 'react'
+import { React, useEffect } from 'react'
 import './contactme.css'
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function ContactMe() {
+
+    const squareVariants = {
+        visible: { x: 0, opacity: 1, scale: 1, transition: { duration: 1 } },
+        hidden: { x: 0, opacity: 0, scale: 0 }
+    };
+    
+    const controls = useAnimation();
+
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+        controls.start("visible");
+        }
+    }, [controls, inView]);
+
     return (
-        <div className='contact-container'>
+        <motion.div
+        className='contact-container'
+        ref={ref}
+        variants={squareVariants}
+        initial='hidden'
+        animate={controls}
+        transition={{ delay: 1 }}
+        >
             <div className="contact-section">
                 <div className="contact-title">
                     <h1>LET'S KEEP IN TOUCH!</h1>
@@ -24,7 +49,7 @@ function ContactMe() {
                     <h2>Twitter - <a href="https://twitter.com/CodeNeedham"><i style={{ border:"1px solid white", padding: "10px", color: "rgb(30, 150, 500)"}} className="fa-brands fa-twitter"></i></a></h2> 
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

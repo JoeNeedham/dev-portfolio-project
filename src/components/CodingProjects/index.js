@@ -1,9 +1,34 @@
-import React from 'react'
+import { React, useEffect} from 'react'
 import './codingprojects.css'
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function CodingProjects() {
+
+    const squareVariants = {
+        visible: { x: 0, opacity: 1, scale: 1, transition: { duration: 1 } },
+        hidden: { x: 0, opacity: 0, scale: 0 }
+    };
+    
+    const controls = useAnimation();
+
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+        controls.start("visible");
+        }
+    }, [controls, inView]);
+    
     return (
-        <div className="projects-container">
+        <motion.div
+        className="projects-container"
+        ref={ref}
+        variants={squareVariants}
+        initial='hidden'
+        animate={controls}
+        transition={{ delay: 1 }}
+        >
             <div className="project-section">
                 <div className="section-title">
                     <h1>RECENT PROJECTS</h1>
@@ -24,7 +49,7 @@ function CodingProjects() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
