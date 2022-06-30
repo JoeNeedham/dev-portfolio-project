@@ -67,6 +67,11 @@ function Navbar() {
                         <li><a onClick={aboutMeNav} className='nav_link' >About Me</a></li>
                         <li><a onClick={portfolioNav} className='nav_link' >Portfolio</a></li>
                         <li><a onClick={contactNav} className='nav_link'>Contact</a></li>
+                        <div className="burger">
+                            <div className="line1"></div>
+                            <div className="line2"></div>
+                            <div className="line3"></div>
+                        </div>
                     </ul>
                 </div>
             </div>

@@ -17,8 +17,20 @@
     align-items: center;
     justify-content: space-between;
 }
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 1px;
+    background-color: white;
+    margin: 10px;
+}
+
 .nav_link_list{
     display: flex;
+    align-items: center;
     list-style-type: none;
     cursor: pointer;
     margin-right: 100px;
@@ -89,4 +101,10 @@
     -ms-animation: rotating 2s linear infinite;
     -o-animation: rotating 2s linear infinite;
     animation: rotating 2s linear infinite;
+}
+
+@media screen and (max-width:1024px) {
+    .nav_content{
+        width: 40%;
+    }
 }
