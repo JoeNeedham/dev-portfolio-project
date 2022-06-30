@@ -19,6 +19,7 @@ function CodingProjects() {
         controls.start("visible");
         }
     }, [controls, inView]);
+
     
     return (
         <motion.div
@@ -40,7 +41,7 @@ function CodingProjects() {
                         <span style={{  margin: "10px 0 10px 10px", color: "white"}}>Portfolio Website</span>
                     </div>
                     <div className="box">
-                        <video autoPlay muted loop src="media/Netflix - 23 June 2022.mp4"></video>
+                        <video playBackRate='2' autoPlay muted loop src="media/Netflix - 23 June 2022.mp4"></video>
                         <span style={{  margin: "10px 0 10px 10px", color: "white"}}>Netflix Clone</span>
                     </div>
                     <div className="box">
