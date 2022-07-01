@@ -48,6 +48,15 @@
     text-underline-offset: 15px;
     padding: 30px 30px 0px 0px;
 }
+.about-tech p{
+    margin-top: 50px;
+    align-self: center;
+    font-size: 25px;
+    margin-left: -25px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
 
 .tech-pictures{
     display: flex;
@@ -77,4 +86,19 @@
 .tech-box p {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+}
+
+@media screen and (max-width:750px) {
+    .about-title h1{
+        font-size: 1em;
+    }
+    .about-content h2{
+        font-size: 1em;
+    }
+    .about-tech h2{
+        font-size: .9em;
+    }
+    .tech-box{
+        opacity: 0;
+    }
 }

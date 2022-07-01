@@ -35,13 +35,14 @@ function CodingProjects() {
                     <h1>RECENT PROJECTS</h1>
                 </div>
                 <div className="projects">
+                <p>Please enlarge screen</p>
                     <div className="box">
                         {/* <span style={{ color: "white" }}>Portfolio Website</span> */}
                         <video autoPlay muted loop src="media/RIOVIISUALS - 23 June 2022.mp4"></video>
                         <span style={{  margin: "10px 0 10px 10px", color: "white"}}>Portfolio Website</span>
                     </div>
                     <div className="box">
-                        <video playBackRate='2' autoPlay muted loop src="media/Netflix - 23 June 2022.mp4"></video>
+                        <video autoPlay muted loop src="media/Netflix - 23 June 2022.mp4"></video>
                         <span style={{  margin: "10px 0 10px 10px", color: "white"}}>Netflix Clone</span>
                     </div>
                     <div className="box">
