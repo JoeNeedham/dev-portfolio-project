@@ -11,13 +11,23 @@ function Navbar() {
     }
 
     const aboutMeNav = () => {
-        window.scrollTo({ top: 700, left: 0, behavior: "smooth"} );
-        handleToggle()
+        if (window.innerWidth < 800){
+            window.scrollTo({ top: 650, left: 0, behavior: "smooth"} );
+            handleToggle()
+        } else {
+            window.scrollTo({ top: 700, left: 0, behavior: "smooth"} );
+            handleToggle()
+        }
     }
 
     const portfolioNav = () => {
-        window.scrollTo({ top: 1300, left: 0, behavior: "smooth"} );
-        handleToggle()
+        if (window.innerWidth < 800){
+            window.scrollTo({ top: 1250, left: 0, behavior: "smooth"} );
+            handleToggle()
+        } else {
+            window.scrollTo({ top: 1300, left: 0, behavior: "smooth"} );
+            handleToggle()
+        }
 
     }
 
