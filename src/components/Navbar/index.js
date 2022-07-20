@@ -3,6 +3,10 @@ import './navbar.css'
 import classNames from 'classnames';
 
 function Navbar() {
+    console.log(window)
+
+    const { innerWidth: width, innerHeight: height } = window;
+
 
     const homeNav = e => {
         window.scrollTo({ top: 0, left: 0, behavior: "smooth"} );
@@ -21,12 +25,17 @@ function Navbar() {
     }
 
     const contactNav = () => {
-        window.scrollTo({ top: 2100, left: 0, behavior: "smooth"} );
-        handleToggle()
+        if (window.innerWidth < 800){
+            window.scrollTo({ top: 5000, left: 0, behavior: "smooth"} );
+            handleToggle()
+        } else {
+            window.scrollTo({ top: 2100, left: 0, behavior: "smooth"} );
+            handleToggle()
+        }
     }
 
 
-    const [isClicked, setIsClicked] = useState(true);
+    const [isClicked, setIsClicked] = useState(false);
 
     const handleToggle = () => {
     
@@ -55,19 +64,23 @@ function Navbar() {
         }
     }
 
+    const handleClick = () => {
+        setIsClicked(!isClicked);
+    }
+
 
 
     return (
         <div className="nav">
             <div className="nav_content">
-                <div className="burger">
+                <div onClick={handleClick} className="burger">
                     <div className="line1"></div>
                     <div className="line2"></div>
                     <div className="line3"></div>
                 </div>
                 <h2 className='name'><span><i className="fa-brands fa-react react-icon rotating"></i></span>JOE NEEDHAM</h2>
                 <div className="nav_links_content">
-                    <ul className="nav_link_list">
+                    <ul style={{top: !isClicked ? '-1000px' : '75px'}} className="nav_link_list">
                         <li><a onClick={homeNav} className='nav_link' >Home</a></li>
                         <li><a onClick={aboutMeNav} className='nav_link' >About Me</a></li>
                         <li><a onClick={portfolioNav} className='nav_link' >Portfolio</a></li>

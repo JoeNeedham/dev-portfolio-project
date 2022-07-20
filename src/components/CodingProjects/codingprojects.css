@@ -37,6 +37,7 @@
     margin-left: 50px;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    display: none;
 }
 .box{
     height: 300px;
@@ -70,6 +71,7 @@ video {
     }
     .projects p{
         flex: none;
+        display: block;
     }
 }
 

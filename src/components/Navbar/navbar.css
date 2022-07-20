@@ -35,6 +35,8 @@
     list-style-type: none;
     cursor: pointer;
     margin-right: 100px;
+    transition-property: top;
+    transition-duration: 1s;
 }
 .nav_link_list li {
     padding: 1.2rem;

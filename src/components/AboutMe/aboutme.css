@@ -50,12 +50,16 @@
 }
 .about-tech p{
     margin-top: 50px;
-    align-self: center;
+    /* align-self: center; */
     font-size: 25px;
     margin-left: -25px;
     color: white;
     font-family: 'Montserrat', sans-serif;
 
+}
+
+.hide-text{
+    display: none;
 }
 
 .tech-pictures{
@@ -100,5 +104,12 @@
     }
     .tech-box{
         opacity: 0;
+    }
+    .hide-text{
+        display: block;
+        margin: 0;
+    }
+    .about-tech p{
+        margin-left: 0;
     }
 }

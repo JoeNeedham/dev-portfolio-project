@@ -50,7 +50,7 @@ function AboutMe() {
                     
                     <div className="about-tech">
                         <h2>Some Technologies Used</h2>
-                        <p>Please enlarge screen</p>
+                        <p className='hide-text'>Please use desktop</p>
                         <div className="tech-pictures">
                             <div className='tech-box'>
                                 <img src="images/react.png" alt="" />
