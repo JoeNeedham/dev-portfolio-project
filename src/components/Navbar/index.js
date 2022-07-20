@@ -5,9 +5,6 @@ import classNames from 'classnames';
 function Navbar() {
     console.log(window)
 
-    const { innerWidth: width, innerHeight: height } = window;
-
-
     const homeNav = e => {
         window.scrollTo({ top: 0, left: 0, behavior: "smooth"} );
         handleToggle()
@@ -32,6 +29,7 @@ function Navbar() {
             window.scrollTo({ top: 2100, left: 0, behavior: "smooth"} );
             handleToggle()
         }
+        
     }
 
 
