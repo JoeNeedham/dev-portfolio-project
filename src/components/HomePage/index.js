@@ -20,7 +20,7 @@ function HomePage() {
         className='home-container'
         >
             <div className='home-content'>
-                <h1 className='job-title'>FRONTEND ENGINEER</h1>
+                <h1 className='job-title'>FULL STACK SOFTWARE DEVELOPER</h1>
             <div className="attributes">
                 <h2 style={{color: "red"}} className='adjectives'>CREATIVE - </h2>
                 &nbsp;
