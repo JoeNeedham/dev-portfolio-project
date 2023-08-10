@@ -43,10 +43,10 @@ function AboutMe() {
                     <h2>Education - Central Michigan University (Winter 2017), Coding Dojo (Fall 2021)</h2>
                     <br />
                     <br />
-                    <h2>Interested In - Web Design, UX, and CSS</h2>
+                    <h2>Interested In - Full Stack Developement, UX/UI, and Machine Learning</h2>
                     <br />
                     <br />
-                    <h2>Currently Learning - TypeScript, Sass, and Figma</h2>
+                    <h2>Currently Learning - TypeScript, GraphQL, and Figma</h2>
                     
                     <div className="about-tech">
                         <h2>Some Technologies Used</h2>
